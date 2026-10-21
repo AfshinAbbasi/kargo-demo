@@ -12,6 +12,8 @@ spec:
       labels:
         app: kargo-demo
     spec:
+      securityContext:
+        runAsNonRoot: true
       containers:
       - name: nginx 
         image: public.ecr.aws/nginx/nginx:placeholder
