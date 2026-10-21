@@ -18,6 +18,7 @@ spec:
       - name: nginx 
         image: public.ecr.aws/nginx/nginx:placeholder
         securityContext:
+          allowPrivilegeEscalation: false
           readOnlyRootFilesystem: true
         volumeMounts:
         - name: content
